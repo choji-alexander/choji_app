@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Article list</title>
+</head>
+<body>
+    {% for each in object_list %}
+    <p>{{ each.id }} - <a href="{{ each.get_absolute_url }}">{{ each.title }}</a></p>
+    {% endfor %}
+</body>
+</html>
